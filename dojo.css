@@ -19,11 +19,6 @@
     box-sizing: border-box;
 }
 
-/* Fixed width container class that will "auto-center" itself */
-.main_container {
-width: 1200px;
-margin: 0 auto;
-}
 
 /* //// Sign Out Button ////////////////////////////////////////// */
 .sign_out_button {                              
@@ -51,15 +46,23 @@ margin: 0 auto;
 
 /*  //// Flex Box ////////////////////////////////////////////////// */
 
+/* Fixed width container class that will "auto-center" itself */
+.main_container {
+    width: 1200px;
+    margin: 0 auto;
+    }
+
 .container {
     display: flex;
 }
 
 .flex_right {
+    display: flex;
     flex-direction: row;
 }
 
 .flex_down {
+    display: flex;
     flex-direction: column;
 }
 
