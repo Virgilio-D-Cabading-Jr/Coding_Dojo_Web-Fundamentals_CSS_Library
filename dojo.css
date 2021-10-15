@@ -18,9 +18,127 @@
     margin: 0;
     box-sizing: border-box;
 }
-      
+
 /* Fixed width container class that will "auto-center" itself */
-.container {
+.main_container {
 width: 1200px;
 margin: 0 auto;
+}
+
+/* //// Sign Out Button ////////////////////////////////////////// */
+.sign_out_button {                              
+    background:none;
+    padding: 0px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px black;
+}
+
+.sign_out_button:hover, .sign_out_button:active {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;;
+}
+
+.sign_out_button:active {
+    transform: translateY(3px);
+    box-shadow: 2px 1px 1px black;
+}
+
+/*  //// Flex Box ////////////////////////////////////////////////// */
+
+.container {
+    display: flex;
+}
+
+.flex_right {
+    flex-direction: row;
+}
+
+.flex_down {
+    flex-direction: column;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.align_up {
+    align-items: flex-start;
+}
+
+.justify_left {
+    justify-content:flex-start;
+}
+
+.justify_right {
+    justify-content: flex-end;
+}
+
+.justify_space {
+    justify-content: space-around;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+/*  //// Generic formating /////////////////////////////////////// */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.bg_blue_steel {
+    background: rgb(2,2,5);
+    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
+}
+
+.bg_dodger {
+    background-color: dodgerblue;
+}
+
+.ft_white {
+    color: white;
+}
+
+.ft_dodger {
+    color: dodgerblue;
+}
+
+.bd_dodger {
+    border-color: dodgerblue;
+}
+
+.bd_navy {
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.pad_10 {
+    padding: 10;
+}
+
+.margin_10 {
+    margin: 10;
+}
+
+.bd_solid {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
 }
